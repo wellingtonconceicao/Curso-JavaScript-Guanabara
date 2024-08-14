@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <h1>Descobrindo o maior número</h1>
+    <p>
+        <input type="button" value="Descubra o maior número" onclick="maior()">
+
+    </p>
+
+    <script>
+
+        function maior(){
+            let n1 = window.prompt('Informe um número:')
+            let n2 = prompt('Informe um número:')
+            let n3 = prompt('Informe um número:')
+            
+            let num1 = Number(n1)
+            let num2 = Number(n2)
+            let num3 = Number(n3)
+            
+
+            if(num1 > num2 && num1 > num3){
+                alert(`O maior número digitado é ${num1}.`)
+            } else if (num2 > num3){
+                alert(`O maior número digitado é ${num2}.`)
+            } else {
+                alert(`O maior número digitado é ${num3}.`)
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
